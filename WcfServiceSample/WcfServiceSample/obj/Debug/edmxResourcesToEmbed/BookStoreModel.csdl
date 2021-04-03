@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="bookstoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="authors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_authors" FromRole="authors" ToRole="books" />
+  </EntityType>
+  <EntityType Name="books">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="format" Type="Int32" />
+    <Property Name="releaseDate" Type="DateTime" Precision="0" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="preface" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="quantityLeft" Type="Int32" />
+    <Property Name="warehouse" Type="Int32" />
+    <Property Name="nextStockDate" Type="DateTime" Precision="0" />
+    <Property Name="isbn" Type="Int32" />
+    <Property Name="validIsbn" Type="Boolean" />
+    <Property Name="author_id" Type="Int32" />
+    <Property Name="publisher_id" Type="Int32" />
+    <NavigationProperty Name="authors" Relationship="Self.FK_books_authors" FromRole="books" ToRole="authors" />
+    <NavigationProperty Name="publishers" Relationship="Self.FK_books_publishers" FromRole="books" ToRole="publishers" />
+  </EntityType>
+  <EntityType Name="publishers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="books" Relationship="Self.FK_books_publishers" FromRole="publishers" ToRole="books" />
+  </EntityType>
+  <Association Name="FK_books_authors">
+    <End Role="authors" Type="Self.authors" Multiplicity="0..1" />
+    <End Role="books" Type="Self.books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="authors">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="author_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_books_publishers">
+    <End Role="publishers" Type="Self.publishers" Multiplicity="0..1" />
+    <End Role="books" Type="Self.books" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="publishers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="books">
+        <PropertyRef Name="publisher_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BookStoreEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="authors" EntityType="Self.authors" />
+    <EntitySet Name="books" EntityType="Self.books" />
+    <EntitySet Name="publishers" EntityType="Self.publishers" />
+    <AssociationSet Name="FK_books_authors" Association="Self.FK_books_authors">
+      <End Role="authors" EntitySet="authors" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+    <AssociationSet Name="FK_books_publishers" Association="Self.FK_books_publishers">
+      <End Role="publishers" EntitySet="publishers" />
+      <End Role="books" EntitySet="books" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

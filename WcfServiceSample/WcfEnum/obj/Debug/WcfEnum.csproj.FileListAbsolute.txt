@@ -1,0 +1,5 @@
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfEnum\bin\Debug\WcfEnum.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfEnum\bin\Debug\WcfEnum.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfEnum\obj\Debug\WcfEnum.csprojResolveAssemblyReference.cache
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfEnum\obj\Debug\WcfEnum.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfEnum\obj\Debug\WcfEnum.pdb

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="bookstoreModelStoreContainer" CdmEntityContainer="BookStoreEntities">
+    <EntitySetMapping Name="authors">
+      <EntityTypeMapping TypeName="bookstoreModel.authors">
+        <MappingFragment StoreEntitySet="authors">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="books">
+      <EntityTypeMapping TypeName="bookstoreModel.books">
+        <MappingFragment StoreEntitySet="books">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="format" ColumnName="format" />
+          <ScalarProperty Name="releaseDate" ColumnName="releaseDate" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="preface" ColumnName="preface" />
+          <ScalarProperty Name="quantityLeft" ColumnName="quantityLeft" />
+          <ScalarProperty Name="warehouse" ColumnName="warehouse" />
+          <ScalarProperty Name="nextStockDate" ColumnName="nextStockDate" />
+          <ScalarProperty Name="isbn" ColumnName="isbn" />
+          <ScalarProperty Name="validIsbn" ColumnName="validIsbn" />
+          <ScalarProperty Name="author_id" ColumnName="author_id" />
+          <ScalarProperty Name="publisher_id" ColumnName="publisher_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publishers">
+      <EntityTypeMapping TypeName="bookstoreModel.publishers">
+        <MappingFragment StoreEntitySet="publishers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

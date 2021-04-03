@@ -1,0 +1,14 @@
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfServiceSample.dll.config
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfServiceSample.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfServiceSample.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfDataContract.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfDataContract.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\obj\Debug\WcfServiceSample.csprojResolveAssemblyReference.cache
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\obj\Debug\WcfServiceSample.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\obj\Debug\WcfServiceSample.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\EntityFramework.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfEnum.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\EntityFramework.xml
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfServiceSample\bin\Debug\WcfEnum.pdb

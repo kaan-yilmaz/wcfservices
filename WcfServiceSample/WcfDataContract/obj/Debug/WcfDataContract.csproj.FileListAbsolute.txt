@@ -1,0 +1,7 @@
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\bin\Debug\WcfDataContract.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\bin\Debug\WcfDataContract.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\obj\Debug\WcfDataContract.csprojResolveAssemblyReference.cache
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\obj\Debug\WcfDataContract.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\obj\Debug\WcfDataContract.pdb
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\bin\Debug\WcfEnum.dll
+C:\Users\kaan_\Desktop\wcfservices\WcfServiceSample\WcfDataContract\bin\Debug\WcfEnum.pdb
